@@ -37,7 +37,7 @@ pipeline {
                      colorized: true, 
                      become: true,             
                      playbook: 'ansible-playbooks/playbook.yml', 
-                     extras: '--extra-vars "variable_host=${HOSTNAME} variable_dbrootpassword=${ROOTPASSWORD} variable_dbname=${DBNAME} variable_dbuser=${DBUSER} variable_dbpass=${DBPASS} ansible_ssh_user=$SUDOERLOGIN ansible_ssh_pass=$SUDOERPASS ansible_sudo_pass=$SUDOERPASS"'
-        )
+	             extras: '--extra-vars "variable_host=${HOSTNAME} variable_dbrootpassword=${ROOTPASSWORD} variable_dbname=${DBNAME} variable_dbuser=${DBUSER} variable_dbpass=${DBPASS} ansible_ssh_user=$SUDOERLOGIN ansible_ssh_pass=$SUDOERPASS ansible_sudo_pass=$SUDOERPASS"'
+	}
     }
 }
